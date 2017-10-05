@@ -1,0 +1,27 @@
+<div class="panel panel-default" >
+    <div class="panel-heading">
+        <h3 class="panel-title">Edit Genre</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" ng-model="genre.name" placeholder="new genre">
+                        <span class="input-group-btn">
+                           <button class="btn btn-default" ng-click="addGenre()" type="button">Add Genre</button>
+                         </span>
+                    </div>
+                    <br>
+                    <div class="input-group" ng-init="getGenres()">
+                        <div ng-repeat="genre in genres">
+                        <ul class="list-group" >
+                            <li class="list-group-item">{{genre.name}} &nbsp;<a href="#" ng-click="deleteGenre(genre._id)"><span class="glyphicon glyphicon-remove pull-right"></span></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
