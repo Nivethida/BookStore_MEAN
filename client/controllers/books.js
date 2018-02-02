@@ -1,5 +1,5 @@
 /**
- * Created by madhan on 8/17/17.
+ * Created by nivethida on 8/17/17.
  */
 var myApp = angular.module('myApp');
 myApp.controller('BooksController',function ($scope,$http,$location,$routeParams) {

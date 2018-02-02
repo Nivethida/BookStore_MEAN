@@ -1,5 +1,5 @@
 /**
- * Created by madhan on 8/20/17.
+ * Created by nivethida on 8/20/17.
  */
 var myApp = angular.module('myApp');
 myApp.controller('registerController',function ($scope,$location,$http) {
